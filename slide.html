@@ -1,0 +1,101 @@
+
+
+  <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<link rel="stylesheet" href="slide.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
+</head>
+<body>
+
+    <div id="splide_metors" class="splide">
+        <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                  <img src="http://wordpress-dev.pointavenue.com/wp-content/uploads/2023/01/Group-88-2.png">
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                  <img src="http://wordpress-dev.pointavenue.com/wp-content/uploads/2023/01/Group-88-3.png">
+              </button>
+        </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="content">
+                <img src="http://wordpress-dev.pointavenue.com/wp-content/uploads/2023/01/DG3-1.png">
+                <div class="info">
+                    <p class="title">Danny Hwang</p>
+                    <p class="desc">Founder & CEO</p>
+                </div>
+              </div>
+              
+              </li>
+            <li class="splide__slide">
+                <div class="content">
+                    <img src="http://wordpress-dev.pointavenue.com/wp-content/uploads/2023/01/Tommy-new-2022-1.png">
+                    <div class="info">
+                        <p class="title">Tommy Nguyen</p>
+                        <p class="desc">Co-Founder & COO</p>
+                    </div>
+                </div>
+              </li>
+            <li class="splide__slide">
+                <div class="content">
+                    <img src="http://wordpress-dev.pointavenue.com/wp-content/uploads/2023/01/DG3-1.png">
+                    <div class="info">
+                        <p class="title">Zack Jones</p>
+                        <p class="desc">Giám đốc Giáo dục Trải nghiệm & Phát triển Kỹ năng Lãnh đạo</p>
+                    </div>
+                </div>
+              
+            </li>
+            <li class="splide__slide">
+                <div class="content">
+                    <img src="http://wordpress-dev.pointavenue.com/wp-content/uploads/2023/01/Tommy-new-2022-1.png">
+                    <div class="info">
+                        <p class="title">Oanh Nguyen</p>
+                        <p class="desc">Phó Giám Đốc Chương trình Trại Lãnh Đạo Quốc Tế</p>
+                    </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="content">
+                    <img src="http://wordpress-dev.pointavenue.com/wp-content/uploads/2023/01/DG3-1.png">
+                    <div class="info">
+                        <p class="title">Edward Oh</p>
+                        <p class="desc">Giám đốc Chương trình Học Thuật tại Trại Lãnh Đạo Quốc Tế</p>
+                    </div>
+                </div>
+              </li>
+              
+          </ul>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            console.log(123);
+        new Splide('#splide_metors', {
+        type: 'slide',
+        perPage: 5,
+        autoplay: false,
+        //   interval: 8000,
+        flickMaxPages: 1,
+        updateOnMove: false,
+        pagination: false,
+        loop: false,
+        padding: '8%',
+        //   throttle: 300,
+        breakpoints: {
+            440: {
+                perPage: 1,
+                padding: '30%'
+            }
+        }
+        }).mount();
+    });
+      </script>
+</body>
+</html>

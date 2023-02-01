@@ -1,0 +1,37 @@
+
+#splide_metors {}
+.content {
+    position: relative;
+    width: max-content;
+    box-sizing: border-box;
+}
+
+.info {
+    position: absolute;
+    bottom: 16px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 5px
+}
+
+.desc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 0
+}
